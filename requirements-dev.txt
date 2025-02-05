@@ -3,4 +3,7 @@ numpy
 pandas
 lightgbm
 pyyaml
+dvc
+mlflow
+dagshub
 -e .
