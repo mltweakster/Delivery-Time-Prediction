@@ -8,4 +8,6 @@ mlflow
 dagshub
 dvc[s3]
 awscli
+fastapi
+uvicorn
 -e .
