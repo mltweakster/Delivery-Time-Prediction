@@ -6,4 +6,6 @@ pyyaml
 dvc
 mlflow
 dagshub
+dvc[s3]
+awscli
 -e .
