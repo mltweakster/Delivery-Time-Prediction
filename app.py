@@ -92,10 +92,11 @@ client = MlflowClient()
 model_name = load_model_information("run_information.json")['model_name']
 
 # stage of the model
-stage = "Staging"
+# stage = "Staging"
+stage = "Production"
 
 # get the latest model version
-latest_model_ver = client.get_latest_versions(name=model_name,stages=[stage])
+# latest_model_ver = client.get_latest_versions(name=model_name,stages=[stage])
 
 # load model path
 model_path = f"models:/{model_name}/{stage}"
@@ -171,4 +172,4 @@ def make_predictions(data: Data):
     return predictions
    
 if __name__ == "__main__":
-    uvicorn.run(app="app:app")
+    uvicorn.run(app="app:app",host="0.0.0.0",port=8000)
