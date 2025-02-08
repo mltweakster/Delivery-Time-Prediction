@@ -28,3 +28,4 @@ client.transition_model_version_stage(
     version=latest_model_version_staging,
     stage=promotion_stage,
     archive_existing_versions=True
+)
