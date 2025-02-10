@@ -1,6 +1,6 @@
 Data_Preparation:
-  test_size: 0.20
-  random_state: 04
+  test_size: 0.2
+  random_state: 05
   
 
 Model_Training:
